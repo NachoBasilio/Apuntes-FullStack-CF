@@ -69,4 +69,37 @@ const data5: Person3 = {
   }
 }
 
+//Intersection types
+
+type Address = {
+  street: string;
+  city: string;
+}
+
+type Phone = {
+  phone: number;
+}
+
+
+type Person4 = {
+  name: string;
+  age: number;
+  email?: string;
+  address: Address;
+} & Phone
+
+// Los intersection types nos permiten combinar varios tipos de datos en uno solo.
+
+const data6: Person4 = {
+  name: 'Rengar',
+  age: 26,
+  address: {
+    street: 'Calle falsa 123',
+    city: 'Springfield'
+  },
+  phone: 123456789
+}
+
+
+
 

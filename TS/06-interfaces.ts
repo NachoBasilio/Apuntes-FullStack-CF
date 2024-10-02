@@ -22,3 +22,4 @@ const user2: ReadOnlyPerson = {
   age: 30,
 };
 
+// user.id = 2; // Esto generaría un error, ya que 'id' es readonly
