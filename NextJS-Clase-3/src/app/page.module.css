@@ -34,7 +34,8 @@
   grid-row-start: 2;
 }
 
-.main ol {
+/* No se puede usar elementos genericos, siempre hay que especificar con clases, menos en global css */
+.main ol { 
   font-family: var(--font-geist-mono);
   padding-left: 0;
   margin: 0;
