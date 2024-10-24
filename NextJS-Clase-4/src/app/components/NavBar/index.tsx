@@ -11,7 +11,7 @@ export default function Navbar () {
                 <Link className={styles.link} href="/dashboard">Dashboard</Link>
             </li>
             <li>
-                <Link className={styles.link} href="/metrics">Metrics</Link>
+                <Link className={styles.link} href="/dashboard/metrics">Metrics</Link>
             </li>
             <li>
                 <Link className={styles.link} href="/blog">Blog</Link>
