@@ -1,21 +1,23 @@
+'use client';
+
 interface AddFormProps {
-    sendForm: () => Promise<void>;
+    action: (formData: FormData) => Promise<void>;
 }
 
-const AddForm: React.FC<AddFormProps> = ({ sendForm }) => {
+const AddForm: React.FC<AddFormProps> = ({ action }) => {
     return (
-        <form action={sendForm}>
+        <form action={action}>
         <label>
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
         </label>
         <label>
             Age:
-            <input type="number" name="age" />
+            <input type="number" name="age" required />
         </label>
         <label>
             Email:
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
         </label>
         <button type="submit">Add</button>
         </form>
